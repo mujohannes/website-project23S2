@@ -3,13 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img_368404.png">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="main-header">
+        <!-- logo -->
+        <a class="logo-link" href="index.html" aria-label="Go back to home page">
+            <img class="logo-image" src="images/TipToe%20Soles_Logo_colour.png" alt="Tiptoe Shoes logo">
+        </a>
+        <form method="get" action="https://example.com">
+           <input type="search" name="query" id="seach-input" placeholder="search keywords">
+           <label for="search-input">Search keywords</label> 
+           <button type="submit">Search</button>
+        </form>
+        <nav class="user-nav">
+            <a href="#">Wishlist</a>
+            <a href="#">Login</a>
+            <a href="#">Signup</a>
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+    <div class="main-banner">
+        <h2>Latest </h2>
+    </div>
+    <main class="container">
+       <nav class="main-navigation">
+            <a href="index.html">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">About Us</a>
+            <a href="#">Login</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Feedback</a>
+            <a href="#">Testimonials</a>
+       </nav>
+       <div class="content">
+            <h1>Tiptoe Shoes</h1>
+       </div>
+    </main>
+    <footer class="main-footer">
+        <nav class="policies">
+            <a href="#">Delivery</a>
+            <a href="#">Return</a>
+            <a href="#">Exchange</a>
+        </nav>
+        <nav class="socials">
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
+        </nav>
+    </footer>
 </body>
 </html>
