@@ -6,6 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img_368404.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="main-header">
@@ -13,16 +14,28 @@
         <a class="logo-link" href="index.html" aria-label="Go back to home page">
             <img class="logo-image" src="images/TipToe%20Soles_Logo_colour.png" alt="Tiptoe Shoes logo">
         </a>
-        <form method="get" action="https://example.com">
+        <form id="search-bar" method="get" action="https://example.com">
            <input type="search" name="query" id="seach-input" placeholder="search keywords">
-           <label for="search-input">Search keywords</label> 
+           <label for="search-input" class="visuallyhidden">Search keywords</label> 
            <button type="submit">Search</button>
         </form>
         <nav class="user-nav">
-            <a href="#">Wishlist</a>
-            <a href="#">Login</a>
-            <a href="#">Signup</a>
-            <a href="#">Cart</a>
+            <a href="#">
+                <i class="fa-solid fa-heart"></i>
+                <span class="link-text">Wishlist</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span class="link-text">Login</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+                <span class="link-text">Signup</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="link-text">Cart</span>
+            </a>
         </nav>
     </header>
     <div class="main-banner">

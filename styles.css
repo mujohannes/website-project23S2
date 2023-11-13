@@ -14,9 +14,34 @@ img {
     max-width: 80px;
 }
 .main-header {
-    
+    display: grid;
+    grid-template-columns: auto 1fr auto;
 }
 .container {
     display: grid;
     grid-template-columns: 12em 1fr;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+.user-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.user-nav a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
 }
