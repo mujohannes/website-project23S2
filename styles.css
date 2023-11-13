@@ -20,7 +20,27 @@ img {
 .container {
     display: grid;
     grid-template-columns: 12em 1fr;
+    gap: 0.5em;
 }
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+.main-navigation a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8em;
+    color: #333333;
+}
+.main-navigation a:hover {
+    background-color: #333333;
+    color: #e0dede;
+}
+.content {
+    padding: 0.5em;
+}
+
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -44,4 +64,21 @@ img {
     text-align: center;
     text-decoration: none;
     color: #000000;
+}
+
+/* slideshow banner */
+.slide {
+    width: 100%;
+    min-height: 30vh;
+    display: grid;
+    place-items: center center;
+}
+.slide:nth-child(1) {
+    background-color: aquamarine;
+}
+.slide:nth-child(2) {
+    background-color: yellow;
+}
+.slide:nth-child(3) {
+    background-color: pink;
 }
