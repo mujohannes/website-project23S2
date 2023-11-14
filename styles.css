@@ -4,6 +4,7 @@ body {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     min-height: 100vh;
+    overflow-y: scroll;
 }
 
 img {
@@ -73,12 +74,15 @@ img {
     display: grid;
     place-items: center center;
 }
+/* first slide */
 .slide:nth-child(1) {
     background-color: aquamarine;
 }
+/* second slide */
 .slide:nth-child(2) {
     background-color: yellow;
 }
+/* third slide */
 .slide:nth-child(3) {
     background-color: pink;
 }
