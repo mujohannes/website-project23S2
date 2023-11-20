@@ -151,3 +151,9 @@ img {
     padding: 1em;
     font-size: 1.5em;
 }
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr );
+    gap: 25px;
+}
