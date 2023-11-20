@@ -37,18 +37,43 @@ img {
 .main-navigation {
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
+    background-color: var(--eggplant);
 }
 .main-navigation a {
     display: block;
     text-decoration: none;
     padding: 0.8em;
-    color: #333333;
+    color: var(--antiflash-white);
 }
 .main-navigation a:hover {
     background-color: #333333;
     color: #e0dede;
 }
+#search-bar {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    min-width: 40vw;
+    border-radius: 4px;
+    overflow: hidden;
+}
+#search-bar input {
+    flex: 1;
+    padding: 0.5em;
+    border: transparent;
+}
+#search-bar input:focus {
+    outline: var(--lilac);
+}
+#search-bar button {
+    padding: 0.5em;
+    border: transparent;
+    background-color: var(--dim-gray);
+    min-width: 14ch;
+    color: var(--antiflash-white);
+}
+
 .content {
     padding: 0.5em;
 }
